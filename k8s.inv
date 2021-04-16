@@ -1,0 +1,6 @@
+[masters]
+kbhost ansible_host=172.31.76.168 ansible_user=ubuntu
+
+[workers]
+kbnode1 ansible_host=172.31.66.161 ansible_user=ubuntu
+kbnode2 ansible_host=172.31.71.229 ansible_user=ubuntu
