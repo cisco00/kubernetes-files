@@ -34,7 +34,7 @@
       name: kubeadm
       state: present
       
-- hosts: kbhost
+- hosts: master
   become: yes
   tasks:
   - name: install kubectl
@@ -43,7 +43,7 @@
       state: present
 
 
-- hosts: kbhost
+- hosts: master
   become: yes
   tasks:
   - name: remove swap
@@ -78,7 +78,7 @@
       chdir: $HOME
       creates: pod_network_setup.txt
   
-- hosts: kbhost
+- hosts: master
   become: yes
   gather_facts: false
   tasks:
