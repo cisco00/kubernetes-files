@@ -1,8 +1,8 @@
 [masters]
-kbhost ansible_host=172.31.66.192 ansible_user=ubuntu
+master ansible_host=172.31.66.192 ansible_user=ubuntu
 
 [workers]
-kbnode1 ansible_host=172.31.72.127 ansible_user=ubuntu
+node ansible_host=172.31.72.127 ansible_user=ubuntu
 #kbnode2 ansible_host=172.31.71.229 ansible_user=ubuntu
 
 [all:vars]
